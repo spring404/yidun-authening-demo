@@ -24,11 +24,11 @@ var post_data = {
 	// 2.设置私有参数
     actions: "[4]",
     videoType: "1",
-    actionVideos: "['http://123.com/video1']",
     needAvatar: "false"
 };
 var signature = utils.genSignature(secretKey, post_data);
 post_data.signature = signature;
+post_data.actionVideos="['http://123.com/video1']";
 //http请求结果
 var responseCallback = function (responseData) {
 	console.log(responseData);

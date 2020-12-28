@@ -23,9 +23,7 @@ var post_data = {
 	signatureMethod: "MD5",
 	// 2.设置私有参数
 	picType: "1",
-    avatar1: "http://123.jpg",
-    avatar2: "http://123.jpg",
-    dataId: "323311889"
+    picImage: "http://123.jpg"
 };
 var signature = utils.genSignature(secretKey, post_data);
 post_data.signature = signature;

@@ -84,7 +84,7 @@ var sendHttpRequest=function(url,type,data,callback){
 			callback(responseData);
 		});
 		//设置超时
-		req.setTimeout(1000,function(){
+		req.setTimeout(5000,function(){
 			console.log('request timeout!');
 			req.abort();
 		});

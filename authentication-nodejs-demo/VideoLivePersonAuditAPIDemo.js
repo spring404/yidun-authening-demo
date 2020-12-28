@@ -26,11 +26,11 @@ var post_data = {
 	cardNo: "123402199711012345",
     actions: "[4]",
     videoType: "2",
-    actionVideos: "['BASE编码后的视频文件']",
     needAvatar: "false"
 };
 var signature = utils.genSignature(secretKey, post_data);
 post_data.signature = signature;
+post_data.actionVideos="['BASE编码后的视频文件']";
 //http请求结果
 var responseCallback = function (responseData) {
 	console.log(responseData);
